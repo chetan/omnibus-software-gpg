@@ -5,7 +5,7 @@ default_version "2.0.7"
 source :url => "ftp://ftp.gnu.org/gnu/pth/pth-#{version}.tar.gz",
        :md5 => "9cb4a25331a4c4db866a31cbe507c793"
 
-relative_path "libksba-#{version}"
+relative_path "pth-#{version}"
 
 configure_env = {
   "LDFLAGS" => "-L#{install_dir}/embedded/lib -I#{install_dir}/embedded/include",
