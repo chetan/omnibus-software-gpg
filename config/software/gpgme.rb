@@ -1,6 +1,6 @@
 
 name "gpgme"
-version "1.4.3"
+default_version "1.4.3"
 
 dependency "gpg"
 

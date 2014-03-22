@@ -1,6 +1,6 @@
 
 name "libassuan"
-version "2.1.1"
+default_version "2.1.1"
 
 source :url => "ftp://ftp.gnupg.org/gcrypt/libassuan/libassuan-#{version}.tar.bz2",
        :md5 => "757243cc4a71b30ed8d8dbe784035d36"

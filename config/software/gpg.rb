@@ -1,6 +1,6 @@
 
 name "gpg"
-version "2.0.22"
+default_version "2.0.22"
 
 dependency "libassuan"
 dependency "libgpg-error"

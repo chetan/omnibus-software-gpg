@@ -1,6 +1,6 @@
 
 name "libgcrypt"
-version "1.6.1"
+default_version "1.6.1"
 
 dependency "libgpg-error"
 
