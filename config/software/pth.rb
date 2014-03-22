@@ -1,17 +1,11 @@
 
-name "gpg"
-version "2.0.22"
+name "pth"
+default_version "2.0.7"
 
-dependency "libassuan"
-dependency "libgpg-error"
-dependency "libgcrypt"
-dependency "libksba"
-dependency "pth"
+source :url => "ftp://ftp.gnu.org/gnu/pth/pth-#{version}.tar.gz",
+       :md5 => "9cb4a25331a4c4db866a31cbe507c793"
 
-source :url => "ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-#{version}.tar.bz2",
-       :md5 => "ee22e7b4fdbfcb50229c2e6db6db291e"
-
-relative_path "gnupg-#{version}"
+relative_path "libksba-#{version}"
 
 configure_env = {
   "LDFLAGS" => "-L#{install_dir}/embedded/lib -I#{install_dir}/embedded/include",
