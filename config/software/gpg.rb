@@ -2,6 +2,7 @@
 name "gpg"
 default_version "2.0.22"
 
+dependency "readline"
 dependency "libassuan"
 dependency "libgpg-error"
 dependency "libgcrypt"
@@ -22,6 +23,7 @@ configure_env = {
 
 build do
   command ["./configure",
+           "--disable-ldap",
            "--prefix=#{prefix}",
            "--with-libgpg-error-prefix=#{prefix}",
            "--with-libgcrypt-prefix=#{prefix}",
