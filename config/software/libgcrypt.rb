@@ -12,7 +12,8 @@ relative_path "libgcrypt-#{version}"
 configure_env = {
   "LDFLAGS" => "-L#{install_dir}/embedded/lib -I#{install_dir}/embedded/include",
   "CFLAGS" => "-L#{install_dir}/embedded/lib -I#{install_dir}/embedded/include",
-  "LD_RUN_PATH" => "#{install_dir}/embedded/lib"
+  "LD_RUN_PATH" => "#{install_dir}/embedded/lib",
+  "GPG_ERROR_CONFIG" => "/#{install_dir}/embedded/bin/gpg-error-config"
 }
 
 build do
