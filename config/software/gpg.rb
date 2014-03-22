@@ -26,7 +26,8 @@ build do
            "--with-libgpg-error-prefix=#{prefix}",
            "--with-libgcrypt-prefix=#{prefix}",
            "--with-libassuan-prefix=#{prefix}",
-           "--with-ksba-prefix=#{prefix}"
+           "--with-ksba-prefix=#{prefix}",
+           "--with-pth-prefix=#{prefix}"
            ].join(" "), :env => configure_env
   command "make -j #{max_build_jobs}", :env => {"LD_RUN_PATH" => "#{prefix}/lib"}
   command "make install"
