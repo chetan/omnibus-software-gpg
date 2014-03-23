@@ -16,7 +16,7 @@ configure_env = {
 }
 
 build do
-  command "./configure --prefix=#{install_dir}/embedded", :env => configure_env
+  command "./configure --disable-slapd --prefix=#{install_dir}/embedded", :env => configure_env
   command "make -j #{max_build_jobs}", :env => {"LD_RUN_PATH" => "#{install_dir}/embedded/lib"}
   command "make depend"
   command "make"
