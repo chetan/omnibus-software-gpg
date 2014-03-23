@@ -8,6 +8,7 @@ dependency "libgpg-error"
 dependency "libgcrypt"
 dependency "libksba"
 dependency "pth"
+dependency "libldap"
 
 source :url => "ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-#{version}.tar.bz2",
        :md5 => "ee22e7b4fdbfcb50229c2e6db6db291e"
