@@ -1,6 +1,6 @@
 
 name "rbnacl"
-default_version "2.0.0"
+default_version "3.0.0"
 
 dependencies %w{ libsodium rubygems }
 
