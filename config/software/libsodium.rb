@@ -1,9 +1,9 @@
 
 name "libsodium"
-default_version "0.4.5"
+default_version "1.0.2"
 
 source :url => "https://download.libsodium.org/libsodium/releases/libsodium-#{version}.tar.gz",
-       :md5 => "3a97d2c29ec0133e334036e3f19d0741"
+       :md5 => "dc40eb23e293448c6fc908757738003f"
 
 relative_path "libsodium-#{version}"
 
